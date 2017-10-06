@@ -1,10 +1,21 @@
 {
   "name": "edb-node-pdf",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Exemplo de uso do PDFKit com NodeJS.",
   "main": "index.js",
+  "config": {
+    "commitMessage": "Adicionada a Licença"
+  },
   "scripts": {
-    "dev": "node index.js"
+    "dev": "node index.js",
+    "git": "npm run gitstatus && npm run gitadd && npm run gitcommit && npm run gittag && npm run gporigin && npm run gpgitlab && npm run gpbitbucket",
+    "gitstatus": "git status",
+    "gitadd": "git add .",
+    "gittag": "git tag v%npm_package_version%",
+    "gitcommit": "git commit -m \"%npm_package_config_commitMessage%\"",
+    "gporigin": "git push origin master --tags",
+    "gpgitlab": "git push gitlab master --tags",
+    "gpbitbucket": "git push bitbucket master --tags"
   },
   "repository": {
     "type": "git",
