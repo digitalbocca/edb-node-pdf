@@ -1,0 +1,28 @@
+{
+  "name": "edb-node-pdf",
+  "version": "0.1.0",
+  "description": "Exemplo de uso do PDFKit com NodeJS.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digitalbocca/edb-node-pdf.git"
+  },
+  "keywords": [
+    "node",
+    "nodejs",
+    "pdf",
+    "pdfkit"
+  ],
+  "author": "Gabriel Bertola Bocca - gabriel at estudiodigitalbocca.com.br",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/digitalbocca/edb-node-pdf/issues"
+  },
+  "homepage": "https://github.com/digitalbocca/edb-node-pdf#readme",
+  "dependencies": {
+    "pdfkit": "^0.8.3"
+  }
+}
