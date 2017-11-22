@@ -1,6 +1,6 @@
 # edb-node-pdf #
 ## Criador de Arquivo PDF ##
-### v0.3.0 ###
+### v0.4.0 ###
 
 > Exemplo de uso do PDFKit com NodeJS.
 
@@ -26,10 +26,10 @@ INSTRUÇÕES APÓS A CRIAÇÃO DO SEU WORKSPACE:
 **O CÓDIGO FOI TESTADO NA VERSÃO 8.8.1 DO NODE**
 
 - DEPOIS DE CARREGADO O WORKSPACE VÁ ATÉ O TERMINAL.
-- ATUALIZE O NODE PARA A VERSÃO 8.8.1 :
-- <code>nvm install 8.8.1</code>
-- <code>nvm use 8.8.1</code>
-- <code>nvm alias default 8.8.1</code>
+- ATUALIZE O NODE PARA A VERSÃO 8.9.1 :
+- <code>nvm install 8.9.1</code>
+- <code>nvm use 8.9.1</code>
+- <code>nvm alias default 8.9.1</code>
 - INSTALE AS DEPENDÊNCIAS:
 - <code>npm install</code>
 - EXECUTE O ARQUIVO:
@@ -61,8 +61,9 @@ npm run dev
 
 ```json
 "dependencies": {
-  "axios": "^0.17.0",
-  "pdfkit": "^0.8.3"
+  "axios": "^0.17.1",
+  "pdfkit": "^0.8.3",
+  "svg-to-pdfkit": "^0.1.4"
 }
 ```
 

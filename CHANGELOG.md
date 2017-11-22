@@ -1,5 +1,12 @@
 # edb-node-pdf #
-## v0.3.0 ##
+## v0.4.0 ##
+
+**Mudanças na v0.4.0**
+
+- Nome do arquivo contém a versão.
+- Atualização de dependências.
+- Formatação com arquivos de fontes.
+- Adicionado Logo em svg.
 
 **Mudanças na v0.3.0**
 
