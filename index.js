@@ -11,17 +11,16 @@
  * @description Arquivo de Entrada. Gera um arquivo PDF com o conteúdo aqui definido.
  * @author Gabriel Bertola Bocca - gabriel at estudiodigitalbocca.com.br
  * @license MIT
- * @version v3.0.0
+ * @version v3.0.1
  * @since v0.1.0
  */
 
-process.env.VER = 'v0.5.0'
+process.env.VER = 'v0.5.1'
 
 const fs = require('fs')
 const PDFDocument = require('pdfkit')
 const axios = require('axios')
 const SVGtoPDF = require('svg-to-pdfkit')
-const _ = require('lodash')
 const logo = require('./images/logo')
 
 const center = { align: 'center' }

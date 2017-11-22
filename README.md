@@ -1,6 +1,6 @@
 # edb-node-pdf #
 ## Criador de Arquivo PDF ##
-### v0.5.0 ###
+### v0.5.1 ###
 
 > Exemplo de uso do PDFKit com NodeJS.
 

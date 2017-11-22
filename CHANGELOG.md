@@ -1,5 +1,10 @@
 # edb-node-pdf #
-## v0.5.0 ##
+## v0.5.1 ##
+
+**Mudanças na v0.5.1**
+
+- Removido lodash.
+- Correção nas dependências.
 
 **Mudanças na v0.5.0**
 
