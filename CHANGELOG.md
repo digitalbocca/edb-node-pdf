@@ -1,5 +1,9 @@
 # edb-node-pdf #
-## v0.4.0 ##
+## v0.5.0 ##
+
+**Mudanças na v0.5.0**
+
+- Capitalizado nome e sobrenome.
 
 **Mudanças na v0.4.0**
 

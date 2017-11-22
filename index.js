@@ -11,16 +11,17 @@
  * @description Arquivo de Entrada. Gera um arquivo PDF com o conteúdo aqui definido.
  * @author Gabriel Bertola Bocca - gabriel at estudiodigitalbocca.com.br
  * @license MIT
- * @version v2.0.0
+ * @version v3.0.0
  * @since v0.1.0
  */
 
-process.env.VER = 'v0.4.0'
+process.env.VER = 'v0.5.0'
 
 const fs = require('fs')
 const PDFDocument = require('pdfkit')
 const axios = require('axios')
 const SVGtoPDF = require('svg-to-pdfkit')
+const _ = require('lodash')
 const logo = require('./images/logo')
 
 const center = { align: 'center' }
@@ -28,6 +29,26 @@ const center = { align: 'center' }
 const uniqueId = () => {
   let uId = 'example-' + process.env.VER + '-' + Date.now().toString()
   return uId
+}
+
+// Implementação com for
+
+// const toUpper = str => {
+//   let splitStr = str.toLowerCase().split(' ')
+//   for (let i = 0; i < splitStr.length; i++) {
+//     splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1)
+//   }
+//   return splitStr.join(' ')
+// }
+
+// Implementação com map
+
+const toUpperFunctional = str => {
+  let splitStr = str.toLowerCase().split(' ')
+  let capital = splitStr.map(elem => {
+    return elem.charAt(0).toUpperCase() + elem.substring(1)
+  })
+  return capital.join(' ')
 }
 
 const createDocument = async (axios) => {
@@ -41,7 +62,15 @@ const createDocument = async (axios) => {
       // })
 
       let usersNames = usersList.map((user) => {
-        return user.name.first + ' ' + user.name.last
+        // Implementação com for
+
+        // let completeName = '- ' + toUpper(user.name.first) + ' ' + toUpper(user.name.last)
+        // return completeName
+
+        // Implementação com map
+
+        let completeName = '- ' + user.name.first + ' ' + user.name.last
+        return toUpperFunctional(completeName)
       })
 
       // console.log(usersNames.toString())

@@ -1,6 +1,6 @@
 # edb-node-pdf #
 ## Criador de Arquivo PDF ##
-### v0.4.0 ###
+### v0.5.0 ###
 
 > Exemplo de uso do PDFKit com NodeJS.
 
@@ -23,7 +23,7 @@
 
 INSTRUÇÕES APÓS A CRIAÇÃO DO SEU WORKSPACE:
 
-**O CÓDIGO FOI TESTADO NA VERSÃO 8.8.1 DO NODE**
+**O CÓDIGO FOI TESTADO NA VERSÃO 8.9.1 DO NODE**
 
 - DEPOIS DE CARREGADO O WORKSPACE VÁ ATÉ O TERMINAL.
 - ATUALIZE O NODE PARA A VERSÃO 8.9.1 :
