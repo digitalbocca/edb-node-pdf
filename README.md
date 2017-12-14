@@ -1,41 +1,14 @@
-# edb-node-pdf #
-## Criador de Arquivo PDF ##
-### v0.5.1 ###
+# edb-node-pdf
+## Criador de Arquivo PDF
+### v0.6.0
 
 > Exemplo de uso do PDFKit com NodeJS.
 
 ---
 
-## UTILIZAÇÃO ##
+## UTILIZAÇÃO
 
-### c9.io ###
-
-**INSTRUÇÕES DE CRIAÇÃO DO WORKSPACE:**
-
-- CRIE UM NOVO WORKSPACE.
-- NOMEIE E CRIE UMA DESCRIÇÃO.
-- ESOLHA 'HOSTED WORKSPACE'
-- ESCOLHA A VISIBILIDADE (PRIVADA OU PUBLICA)
-- PREENCHA O CAMPO 'Clone from Git or Mercurial URL' COM:
-- <code>https://github.com/digitalbocca/edb-node-pdf.git</code>
-- ESCOLHA O TEMPLATE 'blank' (UBUNTU).
-- CRIE O SEU WORKSPACE.
-
-INSTRUÇÕES APÓS A CRIAÇÃO DO SEU WORKSPACE:
-
-**O CÓDIGO FOI TESTADO NA VERSÃO 8.9.1 DO NODE**
-
-- DEPOIS DE CARREGADO O WORKSPACE VÁ ATÉ O TERMINAL.
-- ATUALIZE O NODE PARA A VERSÃO 8.9.1 :
-- <code>nvm install 8.9.1</code>
-- <code>nvm use 8.9.1</code>
-- <code>nvm alias default 8.9.1</code>
-- INSTALE AS DEPENDÊNCIAS:
-- <code>npm install</code>
-- EXECUTE O ARQUIVO:
-- <code>npm run dev</code>
-
-### LOCAL ###
+### LOCAL
 
 CLONE O REPOSITÓRIO:
 
@@ -57,7 +30,7 @@ npm run dev
 
 ---
 
-## DEPENDÊNCIAS ##
+## DEPENDÊNCIAS
 
 ```json
 "dependencies": {
@@ -69,7 +42,7 @@ npm run dev
 
 ---
 
-## MUDANÇAS ##
+## MUDANÇAS
 
 - Veja o Arquivo CHANGELOG.md
 

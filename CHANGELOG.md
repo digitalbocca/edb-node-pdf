@@ -1,5 +1,11 @@
 # edb-node-pdf #
-## v0.5.1 ##
+## v0.6.0 ##
+
+**Mudanças na v0.6.0**
+
+- Removido código marcada para remoção nesta versão.
+- Removido do c9.io.
+- Adicionado cross-var-no-babel.
 
 **Mudanças na v0.5.1**
 

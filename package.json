@@ -1,21 +1,22 @@
 {
   "name": "edb-node-pdf",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "description": "Exemplo de uso do PDFKit com NodeJS.",
   "main": "index.js",
   "config": {
-    "commitMessage": "Correção nas dependências"
+    "commitMessage": "Adicionado cross-var-no-babel"
   },
   "scripts": {
     "dev": "node index.js",
-    "git": "npm run gitstatus && npm run gitadd && npm run gitcommit && npm run gittag && npm run gporigin && npm run gpgitlab && npm run gpbitbucket",
-    "gitstatus": "git status",
-    "gitadd": "git add .",
-    "gittag": "git tag v%npm_package_version%",
-    "gitcommit": "git commit -m \"%npm_package_config_commitMessage%\"",
-    "gporigin": "git push origin master --tags",
-    "gpgitlab": "git push gitlab master --tags",
-    "gpbitbucket": "git push bitbucket master --tags"
+    "git": "npm run gst && npm run gad && npm run gco && npm run gta && npm run gpu",
+    "gst": "git status",
+    "gad": "git add .",
+    "gco": "cross-var git commit -m \"$npm_package_config_commitMessage\"",
+    "gta": "cross-var git tag v$npm_package_version",
+    "gpu": "npm run gpo && npm run gpg && npm run gpb",
+    "gpo": "git push origin master --tags",
+    "gpg": "git push gitlab master --tags",
+    "gpb": "git push bitbucket master --tags"
   },
   "repository": {
     "type": "git",
@@ -39,6 +40,7 @@
     "svg-to-pdfkit": "^0.1.4"
   },
   "devDependencies": {
+    "cross-var-no-babel": "^1.2.0",
     "standard": "^10.0.3"
   }
 }
