@@ -1,10 +1,10 @@
 {
   "name": "edb-node-pdf",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Exemplo de uso do PDFKit com NodeJS.",
   "main": "index.js",
   "config": {
-    "commitMessage": "Adicionado cross-var-no-babel"
+    "commitMessage": "Adicionados selos no README"
   },
   "scripts": {
     "dev": "node index.js",

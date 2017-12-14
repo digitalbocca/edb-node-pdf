@@ -1,5 +1,11 @@
 # edb-node-pdf #
-## v0.6.0 ##
+## v0.7.0 ##
+
+**Mudanças na v0.7.0**
+
+- Atualização do PDF de exemplo.
+- Adicionado selo Standard JS.
+- Adicionado selo Code Climate.
 
 **Mudanças na v0.6.0**
 

@@ -11,11 +11,11 @@
  * @description Arquivo de Entrada. Gera um arquivo PDF com o conteúdo aqui definido.
  * @author Gabriel Bertola Bocca - gabriel at estudiodigitalbocca.com.br
  * @license MIT
- * @version v3.1.0
+ * @version v3.2.0
  * @since v0.1.0
  */
 
-process.env.VER = 'v0.6.0'
+process.env.VER = 'v0.7.0'
 
 const fs = require('fs')
 const PDFDocument = require('pdfkit')
