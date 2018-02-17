@@ -15,7 +15,7 @@
  * @since v0.1.0
  */
 
-process.env.VER = 'v0.7.0'
+process.env.VER = 'v0.8.0'
 
 const fs = require('fs')
 const PDFDocument = require('pdfkit')
@@ -103,7 +103,7 @@ const createDocument = async (axios) => {
   doc.font('EDBLogo')
      .fontSize(16)
      .moveDown(25)
-     .text('©2017 - Estúdio Digital Bocca', center)
+     .text('©2018 - Estúdio Digital Bocca', center)
 
   doc.addPage()
 

@@ -1,35 +1,42 @@
-# edb-node-pdf #
-## v0.7.0 ##
+# edb-node-pdf
 
-**Mudanças na v0.7.0**
+## v0.8.0
+
+### Mudanças na v0.8.0
+
+- Correção nos arquivos .md.
+- Modificações nas mensagens de copyright year.
+- Atualização do PDF de exemplo.
+
+### Mudanças na v0.7.0
 
 - Atualização do PDF de exemplo.
 - Adicionado selo Standard JS.
 - Adicionado selo Code Climate.
 
-**Mudanças na v0.6.0**
+### Mudanças na v0.6.0
 
 - Removido código marcada para remoção nesta versão.
 - Removido do c9.io.
 - Adicionado cross-var-no-babel.
 
-**Mudanças na v0.5.1**
+### Mudanças na v0.5.1
 
 - Removido lodash.
 - Correção nas dependências.
 
-**Mudanças na v0.5.0**
+### Mudanças na v0.5.0
 
 - Capitalizado nome e sobrenome.
 
-**Mudanças na v0.4.0**
+### Mudanças na v0.4.0
 
 - Nome do arquivo contém a versão.
 - Atualização de dependências.
 - Formatação com arquivos de fontes.
 - Adicionado Logo em svg.
 
-**Mudanças na v0.3.0**
+### Mudanças na v0.3.0
 
 - Exemplos movidos para a pasta examples.
 - Novo nomeador de arquivos de exemplos.
@@ -38,13 +45,13 @@
 - Utilizando randomuser.me
 - Adicionado axios.
 
-**Mudanças na v0.2.0**
+### Mudanças na v0.2.0
 
 - Instruções de utilização no README.
 - Adicionada a Licença.
 - Automatizado o Controle de Versão.
 
-**Mudanças na v0.1.0**
+### Mudanças na v0.1.0
 
 - Utilizado o exemplo do site PDFKit, com algumas correções.
 - Início do Controle de Versão.

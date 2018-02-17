@@ -1,6 +1,8 @@
 # edb-node-pdf
+
 ## Criador de Arquivo PDF
-### v0.6.0
+
+### v0.8.0
 
 > Exemplo de uso do PDFKit com NodeJS.
 
@@ -42,6 +44,10 @@ npm run dev
   "axios": "^0.17.1",
   "pdfkit": "^0.8.3",
   "svg-to-pdfkit": "^0.1.4"
+},
+"devDependencies": {
+  "cross-var-no-babel": "^1.2.0",
+  "standard": "^10.0.3"
 }
 ```
 
@@ -54,7 +60,7 @@ npm run dev
 ---
 
 > Este código é para uso didático e não deve ser usado em produção.
-
+>
 > Envie sua dúvida, sugestão ou correção.
-
+>
 > Obrigado.
