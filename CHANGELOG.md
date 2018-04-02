@@ -2,6 +2,11 @@
 
 ## v0.8.0
 
+### Mudanças na v0.9.0
+
+- Atualização do PDF de exemplo.
+- Atualização de dependências.
+
 ### Mudanças na v0.8.0
 
 - Correção nos arquivos .md.
@@ -55,3 +60,5 @@
 
 - Utilizado o exemplo do site PDFKit, com algumas correções.
 - Início do Controle de Versão.
+
+>(c)2018 - Estúdio Digital Bocca - <https://estudiodigitalbocca.com.br>

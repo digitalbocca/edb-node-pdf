@@ -15,7 +15,7 @@
  * @since v0.1.0
  */
 
-process.env.VER = 'v0.8.0'
+process.env.VER = 'v0.9.0'
 
 const fs = require('fs')
 const PDFDocument = require('pdfkit')
