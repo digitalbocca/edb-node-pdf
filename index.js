@@ -15,20 +15,18 @@
  * @since v0.1.0
  */
 
-process.env.VER = 'v0.9.0'
+process.env.VER = 'v0.10.0'
 
+const axios = require('axios')
 const fs = require('fs')
 const PDFDocument = require('pdfkit')
-const axios = require('axios')
 const SVGtoPDF = require('svg-to-pdfkit')
+
 const logo = require('./images/logo')
 
 const center = { align: 'center' }
 
-const uniqueId = () => {
-  let uId = 'example-' + process.env.VER + '-' + Date.now().toString()
-  return uId
-}
+const uniqueId = () => `example-${process.env.VER}-${Date.now().toString()}`
 
 // Implementação com for
 
@@ -89,11 +87,11 @@ const createDocument = async (axios) => {
   doc.pipe(fs.createWriteStream('./examples/' + uniqueId() + '.pdf'))
 
   doc.font('Titulo')
-     .fontSize(26)
-     .text('Exemplo de uso do PDFKit com NodeJS', center)
+    .fontSize(26)
+    .text('Exemplo de uso do PDFKit com NodeJS', center)
 
   doc.fontSize(22)
-     .text(process.env.VER, center)
+    .text(process.env.VER, center)
 
   SVGtoPDF(doc, logo, 210, 400, {
     width: 200,
@@ -101,21 +99,21 @@ const createDocument = async (axios) => {
   })
 
   doc.font('EDBLogo')
-     .fontSize(16)
-     .moveDown(25)
-     .text('©2018 - Estúdio Digital Bocca', center)
+    .fontSize(16)
+    .moveDown(25)
+    .text('©2018 - Estúdio Digital Bocca', center)
 
   doc.addPage()
 
   doc.font('Titulo')
-     .fontSize(26)
-     .text('randomuser.me', center)
+    .fontSize(26)
+    .text('randomuser.me', center)
 
   doc.font('Corpo')
-     .fillColor('#000')
-     .fontSize(12)
-     .moveDown(5)
-     .text(users)
+    .fillColor('#000')
+    .fontSize(12)
+    .moveDown(5)
+    .text(users)
 
   doc.end()
 }

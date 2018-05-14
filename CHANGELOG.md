@@ -1,6 +1,12 @@
 # edb-node-pdf
 
-## v0.8.0
+## v0.10.0
+
+### Mudanças na v0.10.0
+
+- Melhoria no código fonte.
+- Alterações no README.
+- Atualização do PDF de exemplo.
 
 ### Mudanças na v0.9.0
 
