@@ -1,6 +1,11 @@
 # edb-node-pdf
 
-## v0.11.0
+## v0.12.0
+
+### Mudanças na v0.12.0
+
+- Extraida função de capitalização dos nomes.
+- Atualização do PDF de exemplo.
 
 ### Mudanças na v0.11.0
 

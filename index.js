@@ -1,3 +1,5 @@
+'use strict'
+
 /**
  * Estúdio Digital Bocca
  * https://estudiodigitalbocca.com.br
@@ -11,68 +13,32 @@
  * @description Arquivo de Entrada. Gera um arquivo PDF com o conteúdo aqui definido.
  * @author Gabriel Bertola Bocca - gabriel at estudiodigitalbocca.com.br
  * @license MIT
- * @version v3.2.0
+ * @version v4.0.0
  * @since v0.1.0
  */
 
-process.env.VER = 'v0.11.0'
+process.env.VER = 'v0.12.0'
 
 const axios = require('axios')
 const fs = require('fs')
 const PDFDocument = require('pdfkit')
 const SVGtoPDF = require('svg-to-pdfkit')
 
+const capitalize = require('./edb-modules/capitalize')
+
 const logo = require('./images/logo')
-
 const center = { align: 'center' }
-
 const uniqueId = () => `example-${process.env.VER}-${Date.now().toString()}`
 
-// Implementação com for
-
-// const toUpper = str => {
-//   let splitStr = str.toLowerCase().split(' ')
-//   for (let i = 0; i < splitStr.length; i++) {
-//     splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1)
-//   }
-//   return splitStr.join(' ')
-// }
-
-// Implementação com map
-
-const toUpperFunctional = str => {
-  let splitStr = str.toLowerCase().split(' ')
-  let capital = splitStr.map(elem => {
-    return elem.charAt(0).toUpperCase() + elem.substring(1)
-  })
-  return capital.join(' ')
-}
-
-const createDocument = async (axios) => {
+const createDocument = async axios => {
   let users = await axios.get('https://randomuser.me/api/?nat=br&results=50')
     .then(response => {
       let usersList = response.data.results
-
-      // Mostrar partes dos nomes
-      // usersList.forEach((element, index, array) => {
-      //   console.log(element.name)
-      // })
-
-      let usersNames = usersList.map((user) => {
-        // Implementação com for
-
-        // let completeName = '- ' + toUpper(user.name.first) + ' ' + toUpper(user.name.last)
-        // return completeName
-
-        // Implementação com map
-
+      let usersNames = usersList.map(user => {
         let completeName = '- ' + user.name.first + ' ' + user.name.last
-        return toUpperFunctional(completeName)
+        return capitalize(completeName)
       })
 
-      // console.log(usersNames.toString())
-      // console.log(usersNames.toString().split(','))
-      // console.log(usersNames.toString().split(',').join('\n'))
       return usersNames.toString().split(',').join('\n')
     })
     .catch(err => {
