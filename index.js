@@ -17,7 +17,7 @@
  * @since v0.1.0
  */
 
-process.env.VER = 'v0.12.0'
+process.env.VER = 'v0.13.0'
 
 const axios = require('axios')
 const fs = require('fs')
