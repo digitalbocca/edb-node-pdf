@@ -13,17 +13,18 @@
  * @description Arquivo de Entrada. Gera um arquivo PDF com o conteúdo aqui definido.
  * @author Gabriel Bertola Bocca - gabriel at estudiodigitalbocca.com.br
  * @license MIT
- * @version v4.0.0
+ * @version v5.0.0
  * @since v0.1.0
  */
 
-process.env.VER = 'v0.14.0'
+process.env.VER = 'v0.15.0'
 
 const axios = require('axios')
 const fs = require('fs')
 const PDFDocument = require('pdfkit')
 const SVGtoPDF = require('svg-to-pdfkit')
 
+const alpha = require('./edb-modules/alpha')
 const capitalize = require('./edb-modules/capitalize')
 
 const logo = require('./images/logo')
@@ -33,12 +34,10 @@ const uniqueId = () => `example-${process.env.VER}-${Date.now().toString()}`
 const createDocument = async axios => {
   let users = await axios.get('https://randomuser.me/api/?nat=br&results=50')
     .then(response => {
-      let usersList = response.data.results
-      let usersNames = usersList.map(user => {
+      let usersNames = alpha(response.data.results).map(user => {
         let completeName = '- ' + user.name.first + ' ' + user.name.last
         return capitalize(completeName)
       })
-
       return usersNames.toString().split(',').join('\n')
     })
     .catch(err => {

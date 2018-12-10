@@ -1,10 +1,10 @@
 {
   "name": "edb-node-pdf",
-  "version": "0.14.0",
+  "version": "0.15.0",
   "description": "Exemplo de uso do PDFKit com NodeJS.",
   "main": "index.js",
   "config": {
-    "commitMessage": "Atualização de dependências"
+    "commitMessage": "Lista de nome com organização alfabética"
   },
   "scripts": {
     "dev": "node index.js",
@@ -36,6 +36,7 @@
   "homepage": "https://github.com/digitalbocca/edb-node-pdf#readme",
   "dependencies": {
     "axios": "^0.18.0",
+    "lodash": "^4.17.11",
     "pdfkit": "^0.8.3",
     "svg-to-pdfkit": "^0.1.7"
   },

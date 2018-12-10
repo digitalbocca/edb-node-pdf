@@ -2,7 +2,7 @@
 
 ## Criador de Arquivo PDF
 
-### v0.14.0
+### v0.15.0
 
 > Exemplo de uso do PDFKit com NodeJS.
 
@@ -42,6 +42,7 @@ npm run dev
 ```json
 "dependencies": {
   "axios": "^0.18.0",
+  "lodash": "^4.17.11",
   "pdfkit": "^0.8.3",
   "svg-to-pdfkit": "^0.1.7"
 },

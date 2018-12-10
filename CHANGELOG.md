@@ -1,6 +1,10 @@
 # edb-node-pdf
 
-## v0.14.0
+## v0.15.0
+
+### Mudanças na v0.15.0
+
+- Lista de nome com organização alfabética.
 
 ### Mudanças na v0.14.0
 
