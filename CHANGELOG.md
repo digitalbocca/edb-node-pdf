@@ -1,6 +1,13 @@
 # edb-node-pdf
 
-## v0.15.0
+## v0.16.0
+
+### Mudanças na v0.16.0
+
+- Melhoria na documentação.
+- Substituído lodash completo por lodash.orderby.
+- Atualização no arquivo de exemplo.
+- Atualização no ano de copyright.
 
 ### Mudanças na v0.15.0
 
@@ -90,4 +97,4 @@
 - Utilizado o exemplo do site PDFKit, com algumas correções.
 - Início do Controle de Versão.
 
->(c)2018 - Estúdio Digital Bocca - <https://estudiodigitalbocca.com.br>
+>(c)2018-2019 Estúdio Digital Bocca - <https://estudiodigitalbocca.com.br>

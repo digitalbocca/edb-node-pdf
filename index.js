@@ -11,13 +11,15 @@
  *
  * @file index.js
  * @description Arquivo de Entrada. Gera um arquivo PDF com o conteúdo aqui definido.
+ *
  * @author Gabriel Bertola Bocca - gabriel at estudiodigitalbocca.com.br
  * @license MIT
- * @version v5.0.0
+ *
+ * @version v6.0.0
  * @since v0.1.0
  */
 
-process.env.VER = 'v0.15.0'
+process.env.VER = 'v0.16.0'
 
 const axios = require('axios')
 const fs = require('fs')
@@ -66,7 +68,7 @@ const createDocument = async axios => {
   doc.font('EDBLogo')
     .fontSize(16)
     .moveDown(25)
-    .text('©2018 - Estúdio Digital Bocca', center)
+    .text('©2019 - Estúdio Digital Bocca', center)
 
   doc.addPage()
 
