@@ -19,9 +19,10 @@
  * @since v0.1.0
  */
 
-process.env.VER = 'v0.17.0'
+require('dotenv').config()
 
 const axios = require('axios')
+const chalk = require('chalk')
 const fs = require('fs')
 const PDFDocument = require('pdfkit')
 const SVGtoPDF = require('svg-to-pdfkit')
@@ -87,4 +88,4 @@ const createDocument = async axios => {
 
 createDocument(axios)
 
-console.log('Projeto Iniciado - ', process.env.VER)
+console.log(`Gerando PDF - ${chalk.green(process.env.VER)}`)

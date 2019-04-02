@@ -1,6 +1,10 @@
 # edb-node-pdf
 
-## v0.17.0
+## v0.18.0
+
+### Mudanças na v0.18.0
+
+- Configuração movida para o arquivo .env.
 
 ### Mudanças na v0.17.0
 
