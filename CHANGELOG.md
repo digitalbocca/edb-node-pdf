@@ -1,6 +1,10 @@
 # edb-node-pdf
 
-## v0.19.0
+## v0.20.0
+
+### Mudanças na v0.20.0
+
+- Atualização de dependências.
 
 ### Mudanças na v0.19.0
 
