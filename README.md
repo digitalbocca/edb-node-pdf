@@ -2,7 +2,7 @@
 
 ## Criador de Arquivo PDF
 
-### v0.22.0
+### v0.23.0
 
 > Exemplo de uso do PDFKit com NodeJS.
 

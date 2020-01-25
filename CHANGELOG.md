@@ -1,6 +1,10 @@
 # edb-node-pdf
 
-## v0.22.0
+## v0.23.0
+
+### Mudanças na v0.23.0
+
+- Atualização de dependências.
 
 ### Mudanças na v0.22.0
 
@@ -121,4 +125,4 @@
 - Utilizado o exemplo do site PDFKit, com algumas correções.
 - Início do Controle de Versão.
 
->(c)2018-2019 Estúdio Digital Bocca - <https://estudiodigitalbocca.com.br>
+>(c)2018-2020 Estúdio Digital Bocca - <https://estudiodigitalbocca.com.br>
