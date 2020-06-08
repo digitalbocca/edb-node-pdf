@@ -15,7 +15,7 @@
  * @author Gabriel Bertola Bocca - gabriel at estudiodigitalbocca.com.br
  * @license MIT
  *
- * @version v6.0.0
+ * @version v7.0.0
  * @since v0.1.0
  */
 
@@ -69,7 +69,7 @@ const createDocument = async axios => {
   doc.font('EDBLogo')
     .fontSize(16)
     .moveDown(25)
-    .text('©2019 - Estúdio Digital Bocca', center)
+    .text('©2020 - Estúdio Digital Bocca', center)
 
   doc.addPage()
 
