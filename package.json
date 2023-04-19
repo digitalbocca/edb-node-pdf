@@ -35,7 +35,7 @@
   },
   "homepage": "https://github.com/digitalbocca/edb-node-pdf#readme",
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "chalk": "^4.1.0",
     "dotenv": "^8.2.0",
     "lodash.orderby": "^4.6.0",
