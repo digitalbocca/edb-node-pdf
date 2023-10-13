@@ -15,17 +15,17 @@
  * @author Gabriel Bertola Bocca - gabriel at estudiodigitalbocca.com.br
  * @license MIT
  *
- * @version v8.0.0
+ * @version v9.0.0
  * @since v0.1.0
  */
 
 require('dotenv').config()
 
 const axios = require('axios')
-const chalk = require('chalk')
 const fs = require('fs')
 const PDFDocument = require('pdfkit')
 const SVGtoPDF = require('svg-to-pdfkit')
+const chalk = require('picocolors')
 
 const alpha = require('./edb-modules/alpha')
 const capitalize = require('./edb-modules/capitalize')
@@ -69,7 +69,7 @@ const createDocument = async axios => {
   doc.font('EDBLogo')
     .fontSize(16)
     .moveDown(25)
-    .text('©2021 - Estúdio Digital Bocca', center)
+    .text('©2023 - Estúdio Digital Bocca', center)
 
   doc.addPage()
 
